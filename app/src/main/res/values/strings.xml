@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">WearKitPhoneDemo</string>
+
+    <string name="target_pkg_name">TargetPkgName:</string>
+    <string name="target_finger_print">TargetFingerPrint:</string>
+    <string name="send_message">SendMessage:</string>
+    <string name="permission_info">Permission Function</string>
+    <string name="check_permission">checkPermission</string>
+    <string name="check_permissions">checkPermissions</string>
+    <string name="request_permissions">requestPermissions</string>
+    <string name="client_info">Client Function</string>
+    <string name="get_client_api_level">getClientApiLevel</string>
+    <string name="get_service_api_level">getServiceApiLevel</string>
+    <string name="release_connection">releaseConnection</string>
+    <string name="register_service_connection">registerService</string>
+    <string name="unregister_service_connection">unRegisterService</string>
+    <string name="device_info">Devices Function</string>
+    <string name="get_bonded_devices">getBondedDevices</string>
+    <string name="get_common_devices">getCommonDevices</string>
+    <string name="has_available_devices">hasAvailableDevices</string>
+    <string name="get_available_kbytes">getAvailableKbytes</string>
+    <string name="monitor_info">Monitor Function</string>
+    <string name="query_monitor">queryMonitor</string>
+    <string name="register_one_monitor">registerOneMonitor</string>
+    <string name="register_many_monitor">registerManyMonitor</string>
+    <string name="unregister_monitor">unRegisterMonitor</string>
+    <string name="notify_info">Notify Function</string>
+    <string name="notify_no_button">notifyNoButton</string>
+    <string name="notify_one_button">notifyOneButton</string>
+    <string name="notify_two_button">notifyTwoButton</string>
+    <string name="notify_three_button">notifyThreeButton</string>
+    <string name="p2p_info">P2P Function</string>
+    <string name="get_app_version">getAppVersion</string>
+    <string name="is_app_installed">isAppInstalled</string>
+    <string name="ping">ping</string>
+    <string name="register_receiver">registerReceiver</string>
+    <string name="unregister_receiver">unregisterReceiver</string>
+    <string name="send_msg">sendMsg</string>
+    <string name="send_msg_byte">sendMsgByte</string>
+    <string name="select_file_and_send">selectFileAndSend</string>
+    <string name="cancel_file_transfer">cancelFileTransfer</string>
+    <string name="result_into">result</string>
+</resources>

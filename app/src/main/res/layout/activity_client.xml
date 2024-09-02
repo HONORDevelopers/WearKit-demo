@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".ClientActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/get_client_api_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getClientApiLevel"
+        android:text="@string/get_client_api_level"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/get_service_api_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getServiceApiLevel"
+        android:text="@string/get_service_api_level"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/get_client_api_level" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/release_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="releaseConnection"
+        android:text="@string/release_connection"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/get_service_api_level" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_service_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="registerServiceConnectionListener"
+        android:text="@string/register_service_connection"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/release_connection" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/unregister_service_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unregisterServiceConnectionListener"
+        android:text="@string/unregister_service_connection"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/register_service_connection" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/result_into"
+        android:lineSpacingMultiplier="1.3"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

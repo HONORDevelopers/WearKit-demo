@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".P2pActivity">
+
+    <EditText
+        android:id="@+id/target_pkg_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/target_pkg_name_info"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/target_finger_print"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/target_pkg_name"
+        app:layout_constraintTop_toBottomOf="@id/target_pkg_name" />
+
+    <EditText
+        android:id="@+id/send_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/target_finger_print"
+        app:layout_constraintTop_toBottomOf="@id/target_finger_print" />
+
+    <TextView
+        android:id="@+id/target_pkg_name_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/target_pkg_name"
+        app:layout_constraintBottom_toBottomOf="@id/target_pkg_name"
+        app:layout_constraintEnd_toStartOf="@id/target_pkg_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/target_pkg_name" />
+
+    <TextView
+        android:id="@+id/target_finger_print_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/target_finger_print"
+        app:layout_constraintBottom_toBottomOf="@id/target_finger_print"
+        app:layout_constraintEnd_toStartOf="@id/target_finger_print"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/target_finger_print" />
+
+    <TextView
+        android:id="@+id/send_message_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_message"
+        app:layout_constraintBottom_toBottomOf="@id/send_message"
+        app:layout_constraintEnd_toStartOf="@id/send_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/send_message" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/get_app_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getAppVersion"
+        android:text="@string/get_app_version"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/send_message_info" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/is_app_installed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="isAppInstalled"
+        android:text="@string/is_app_installed"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/get_app_version" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ping"
+        android:text="@string/ping"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/is_app_installed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="registerReceiver"
+        android:text="@string/register_receiver"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ping" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/unregister_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unregisterReceiver"
+        android:text="@string/unregister_receiver"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_receiver" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendMsg"
+        android:text="@string/send_msg"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/unregister_receiver" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_file_and_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectFileAndSend"
+        android:text="@string/select_file_and_send"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/send_msg" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancel_file_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cancelFileTransfer"
+        android:text="@string/cancel_file_transfer"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_file_and_send" />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/result_into"
+        android:lineSpacingMultiplier="1.3"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

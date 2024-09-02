@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".MonitorActivity">
+
+    <RadioGroup
+        android:id="@+id/select_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/query_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="queryMonitor"
+        android:text="@string/query_monitor"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/select_monitor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_one_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="registerOneMonitor"
+        android:text="@string/register_one_monitor"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/query_monitor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_many_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="registerManyMonitor"
+        android:text="@string/register_many_monitor"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/register_one_monitor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/unregister_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unRegisterMonitor"
+        android:text="@string/unregister_monitor"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/register_many_monitor" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/result_into"
+        android:lineSpacingMultiplier="1.3"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

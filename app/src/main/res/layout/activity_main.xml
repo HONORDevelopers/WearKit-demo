@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/client_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startClientActivity"
+        android:text="Client Function"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/permission_function" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/devices_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startDevicesActivity"
+        android:text="Devices Function"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/client_function" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/monitor_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startMonitorActivity"
+        android:text="Monitor Function"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/devices_function" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/notify_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startNotifyActivity"
+        android:text="Notify Function"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/monitor_function" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/p2p_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startP2pActivity"
+        android:text="P2p Function"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/notify_function" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/permission_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startAutoActivity"
+        android:text="Permission Function"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
